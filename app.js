@@ -1,19 +1,16 @@
-// if(true){
-// let name = "pond"
-// console.log(name)
-// }
-// let name = "kuy"
-// console.log(name)
- 
+class pond{
+    constructor(money){
+        this.money = money
+    }
+    getVax(){
+        return this.money*(this.money/100*5)
+    }
+    static whoami(){
+        console.log("pond")
+    }
+}
 
+let minipond= new pond(5)
+console.log(minipond.getVax())
 
-function sum(x,y) { // regula
-     return x+y
- }
-
-let result = function (x,y) { return x+y } //express
-
-let result_ar =  (x,y) => { return x+y } //arror funtion
-
- 
-console.log(result_ar(3,4))
+pond.whoami()
